@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --container-width-min: 1440px;
+  --container-width-max: 1920px;
+
+  --wrapper-width-min: 1146px;
+  --wrapper-width-max: 1920px;
+
+  --primary-color: #191919;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Gotham";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  line-height: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  line-height: 0;
+
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/GothamBook.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/GothamBold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

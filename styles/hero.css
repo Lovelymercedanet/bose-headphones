@@ -1,0 +1,128 @@
+.hero {
+  background: url("../img/headphones-hero.png") no-repeat calc(100% - 259px)
+      120px / auto,
+    url("../svg/hero-background-texture.svg") no-repeat 100% 100% / auto,
+    url("../svg/hero-background.svg") no-repeat 100% -24px / auto;
+
+}
+
+.hero-wrapper {
+  min-height: 672.46px;
+  height: 100%;
+
+  padding-top: 32px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.hero-content h1 {
+  width: 543px;
+
+  color: var(--primary-color);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.hero-content__color-picker-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content__color-picker-heading {
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--primary-color);
+
+  margin-bottom: 16px;
+}
+
+.hero-content__color-current-name {
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--primary-color);
+}
+
+.hero-content__color-items {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+
+  width: 232px;
+
+  margin-bottom: 12px;
+}
+
+.hero-content__color-item {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+
+  background-color: var(--primary-color);
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.hero-content__color-item-1 {
+  background-color: #666666;
+}
+
+.hero-content__color-item-2 {
+  background-color: #feb554;
+}
+
+.hero-content__color-item-3 {
+  background-color: #606651;
+}
+
+.hero-content__color-item-4 {
+  background-color: #edab7b;
+}
+
+.hero-content__color-item-5 {
+  background-color: #c56a72;
+}
+
+.hero-content__current-color-item {
+  width: 25px;
+  height: 25px;
+
+  outline: 3px solid #666666;
+  outline-offset: 5px;
+}
+
+.hero-content__price-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+
+.hero-content__price {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--primary-color);
+}
+
+.hero-content__price-btn {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  padding: 15px 48px;
+
+  border-radius: 50px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.hero-content__price-btn:hover {
+  opacity: 0.9;
+}

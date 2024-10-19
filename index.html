@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bose</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/products-slider.css" />
+    <link rel="stylesheet" href="./styles/features.css" />
+    <link rel="stylesheet" href="./styles/overview.css" />
+    <link rel="stylesheet" href="./styles/related-products.css" />
+    <link rel="stylesheet" href="./styles/cta.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="container hero">
+        <div class="wrapper hero-wrapper">
+          <header class="header">
+            <nav class="nav">
+              <img src="./svg/logo.svg" alt="Logo of the page" class="logo" />
+              <ul>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Audio sunglasses</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </nav>
+            <div class="user-controls">
+              <a href="#"
+                ><img
+                  class="shopping-cart__icon"
+                  src="./svg/shopping-cart-icon.svg"
+                  alt="Link to the store"
+              /></a>
+              <button>
+                <img
+                  class="search__icon"
+                  src="./svg/search-icon.svg"
+                  alt="Search"
+                />
+              </button>
+              <button class="user">
+                <img src="./img/user-avatar.svg" alt="" class="user__avatar" />
+                <img
+                  class="user__dropdown"
+                  src="./svg/dropdown-icon.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </header>
+          <div class="hero-content">
+            <h1>QuietComfort 35 wireless headphones II</h1>
+            <div class="hero-content__color-picker-wrapper">
+              <div class="hero-content__color-picker-heading">
+                Select your color:
+              </div>
+              <div class="hero-content__color-items">
+                <div
+                  onclick="switchColorItem(1, 'silver')"
+                  class="hero-content__color-item hero-content__color-item-1 hero-content__current-color-item"
+                ></div>
+                <div
+                  onclick="switchColorItem(2, 'yellow')"
+                  class="hero-content__color-item hero-content__color-item-2"
+                ></div>
+                <div
+                  onclick="switchColorItem(3, 'green')"
+                  class="hero-content__color-item hero-content__color-item-3"
+                ></div>
+                <div
+                  onclick="switchColorItem(4, 'light-orange')"
+                  class="hero-content__color-item hero-content__color-item-4"
+                ></div>
+                <div
+                  onclick="switchColorItem(5, 'pink')"
+                  class="hero-content__color-item hero-content__color-item-5"
+                ></div>
+              </div>
+              <div class="hero-content__color-current-name">Silver</div>
+            </div>
+            <div class="hero-content__price-wrapper">
+              <div class="hero-content__price">$229.95</div>
+              <button class="hero-content__price-btn">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container products-slider">
+        <div class="wrapper products-slider-wrapper">
+          <img
+            id="products-slider-left"
+            onclick="scrollSlider(-1)"
+            src="./svg/product-slider-left-slide.svg"
+          />
+          <div class="products-slider-items">
+            <img
+              class="products-slider-item products-slider-item1"
+              src="./img/product-slider-item1.png"
+            />
+
+            <img
+              class="products-slider-item products-slider-item2"
+              src="./img/product-slider-item2.png"
+            />
+
+            <img
+              class="products-slider-item products-slider-item3"
+              src="./img/product-slider-item3.png"
+            />
+
+            <img
+              class="products-slider-item products-slider-item4"
+              src="./img/product-slider-item4.png"
+            />
+
+            <img
+              class="products-slider-item products-slider-item5"
+              src="./img/product-slider-item5.png"
+            />
+
+            <img
+              class="products-slider-item products-slider-item6"
+              src="./img/product-slider-item6.png"
+            />
+
+            <img
+              class="products-slider-item products-slider-item6"
+              src="./img/product-slider-item6.png"
+            />
+          </div>
+          <img
+            id="products-slider-right"
+            onclick="scrollSlider(1)"
+            src="./svg/product-slider-right-slide.svg"
+          />
+        </div>
+      </div>
+      <main>
+        <header class="container features-container">
+          <div class="wrapper features-wrapper">
+            <nav>
+              <ul>
+                <li
+                  onclick="switchFeature(1)"
+                  class="feature feature--1 feature--active"
+                >
+                  Overview
+                </li>
+                <li onclick="switchFeature(2)" class="feature feature--2">
+                  Specs
+                </li>
+                <li onclick="switchFeature(3)" class="feature feature--3">
+                  Reviews
+                </li>
+                <li onclick="switchFeature(4)" class="feature feature--4">
+                  Accessories
+                </li>
+                <li
+                  onclick="switchFeature(5)"
+                  class="feature feature--5 feature--last"
+                >
+                  Support
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <section class="container overview">
+          <div class="wrapper overview-wrapper">
+            <section class="overview-part-1">
+              <img
+                class="overview-part-1-pic"
+                src="./img/overview-part-1-img.png"
+              />
+              <div class="overview-text">
+                <h2 class="overview-header">Perfect sound immersive world</h2>
+                <p class="overview-p">
+                  QuietComfort 35 wireless headphones II are engineered with
+                  renowned noise cancellation. With the Google Assistant and
+                  Amazon Alexa built-in, you have instant access to millions of
+                  songs, playlists and more—hands free.
+                </p>
+              </div>
+            </section>
+            <section class="overview-part-2">
+              <div class="overview-text overview-text-part-2">
+                <h2 class="overview-header">Premium design</h2>
+                <p class="overview-p">
+                  When you want to take your music anywhere, you need headphones
+                  built to keep up. With impact-resistant materials,
+                  glass-filled nylon, and corrosion-resistant stainless steel,
+                  they’re engineered to survive life on the go.
+                </p>
+              </div>
+              <div class="overview-part-2-images-wrapper">
+                <img src="./img/headphones-overview-part-2.png" />
+                <div class="cross-headphones cross-headphones-1">
+                  <img
+                    id="cross-headphones-1-id"
+                    src="./svg/cross-headphones.svg"
+                  />
+                  <img
+                    id="cross-circle-1-1-id"
+                    src="./svg/cross-circle-1.svg"
+                    alt=""
+                  />
+                  <img
+                    id="cross-circle-1-2-id"
+                    src="./svg/cross-circle-2.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="cross-headphones cross-headphones-2">
+                  <img
+                    id="cross-headphones-2-id"
+                    src="./svg/cross-headphones.svg"
+                  />
+                  <img
+                    id="cross-circle-2-1-id"
+                    src="./svg/cross-circle-1.svg"
+                    alt=""
+                  />
+                  <img
+                    id="cross-circle-2-2-id"
+                    src="./svg/cross-circle-2.svg"
+                    alt=""
+                  />
+                  <div class="cross-headphones-2-info-panel hidden-panel">
+                    <h3 class="cross-info-panel-h">Impact resistant</h3>
+                    <div class="cross-info-panel-text">
+                      Designed to handle life on the go.
+                    </div>
+                  </div>
+                </div>
+                <div class="cross-headphones cross-headphones-3">
+                  <img
+                    id="cross-headphones-3-id"
+                    src="./svg/cross-headphones.svg"
+                  />
+                  <img
+                    id="cross-circle-3-1-id"
+                    src="./svg/cross-circle-1.svg"
+                    alt=""
+                  />
+                  <img
+                    id="cross-circle-3-2-id"
+                    src="./svg/cross-circle-2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </section>
+            <section class="overview-part-3">
+              <div class="overview-text">
+                <h2 class="overview-header">Up to 20 hours battery life</h2>
+                <p class="overview-p">
+                  Enjoy up to 20 hours of listening, enough time to pore through
+                  this entire playlist. So you can keep the music — or the quiet
+                  — going all day long. And when it finally runs down, a quick
+                  15-minute charge gives you another 2.5 hours.
+                </p>
+              </div>
+              <div class="overview-part-3-pic-wrapper">
+                <img
+                  class="overview-part-3-pic"
+                  src="./img/overview-part-3-img.png"
+                />
+                <img
+                  class="overview-part-3-battery-pic"
+                  src="./img/battery.png"
+                />
+                <img
+                  class="overview-part-3-waves-pic"
+                  src="./svg/waves-part-4.svg"
+                />
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+      <div class="container related-products">
+        <div class="wrapper related-products-wrapper">
+          <div class="related-products__header">
+            <h2>Related products</h2>
+            <a href="#">SHOW ALL</a>
+          </div>
+          <div class="products-cards__wrapper">
+            <div class="products-card">
+              <img
+                class="products-card__img"
+                src="./img/card-headphones-1.png"
+              />
+              <div class="related-products__info-wrapper">
+                <h3>QuietComfort 35 wireless headphones II</h3>
+                <div class="related-products__price">$449.99</div>
+              </div>
+            </div>
+            <div class="products-card">
+              <img
+                class="products-card__img"
+                src="./img/card-headphones-2.png"
+              />
+              <div class="related-products__info-wrapper">
+                <h3>SoundLink® aroundear wireless headphones</h3>
+                <div class="related-products__price">$269.99</div>
+              </div>
+            </div>
+            <div class="products-card">
+              <img
+                class="products-card__img"
+                src="./img/card-headphones-3.png"
+              />
+              <div class="related-products__info-wrapper">
+                <h3>Bose on-ear wireless headphones</h3>
+                <div class="related-products__price">$209.99</div>
+              </div>
+            </div>
+            <div class="products-card">
+              <img
+                class="products-card__img products-card__img4"
+                src="./img/card-headphones-4.png"
+              />
+              <div class="related-products__info-wrapper">
+                <h3>Bose Noise Cancelling Headphones 700</h3>
+                <div class="related-products__price">Coming Soon</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container cta">
+        <img class="cta-img" src="./img/girlctaimg.png" />
+        <div class="wrapper cta-wrapper">
+          <div class="cta-inner">
+            <div class="cta-text">
+              <h2>Being first has its perks</h2>
+              <p>
+                Sign up to get more information about Bose, exclusive first
+                looks at promotions, new products and more.
+              </p>
+            </div>
+            <form class="cta-inner__form" action="#">
+              <input type="email" name="email" placeholder="Your e-mail here" />
+              <button type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer class="container footer">
+        <nav class="nav">
+          <img
+            src="./svg/logo.svg"
+            alt="Logo of the page"
+            class="logo logo__footer"
+          />
+          <ul>
+            <li><a href="#">Headphones</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Audio sunglasses</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

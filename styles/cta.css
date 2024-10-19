@@ -1,0 +1,102 @@
+.cta {
+  position: relative;
+
+  justify-content: start;
+
+  min-height: 668px;
+
+  background: linear-gradient(
+    to bottom,
+    #f9f9f9 22.2%,
+    var(--primary-color) 22.2%
+  );
+}
+
+.cta-img {
+  position: absolute;
+  max-width: 540px;
+  max-height: 668px;
+}
+
+.cta-wrapper {
+  padding: 269px 0 110px 0;
+}
+
+.cta-inner {
+  margin-left: auto;
+  margin-right: 96px;
+
+  max-width: 469px;
+
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 20px;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
+}
+
+.cta-text h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.7rem;
+
+  text-align: left;
+
+  color: #ffffff;
+}
+
+.cta-text p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.88rem;
+
+  text-align: left;
+
+  color: #ffffff;
+}
+
+.cta-inner__form {
+  display: flex;
+  column-gap: 16px;
+}
+
+.cta-inner form input {
+  width: 100%;
+  max-width: 255px;
+
+  padding: 1.1rem 2rem 0.9rem 2rem;
+
+  border-radius: 50px;
+
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.88rem;
+  font-family: 'Gotham';
+}
+
+.cta-inner form input:focus {
+  outline: 3px solid rgb(255, 162, 0);
+}
+
+.cta-inner form button {
+  padding: 1.3rem 5.7rem;
+
+  background-color: #ffffff;
+
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+
+  border-radius: 50px;
+}
+
+.cta-inner form button:hover {
+  background-color: #ffffffde;
+}

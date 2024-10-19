@@ -1,0 +1,25 @@
+.footer {
+  padding: 5.2rem 0 5.2rem 0;
+  background-color: black;
+}
+
+.footer nav ul li a {
+  color: white;
+}
+
+.footer ul li a::after {
+  display: block;
+
+  content: "";
+
+  height: 0.1px;
+  width: 0%;
+
+  background-color: white;
+
+  transition: width 0.3s ease-in-out;
+}
+
+.logo__footer {
+  filter: brightness(0) invert(1);
+}
